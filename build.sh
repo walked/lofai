@@ -5,3 +5,5 @@ go get
 go build lofai.go
 
 docker build -t walked/lofai .
+
+rm ./lofai
