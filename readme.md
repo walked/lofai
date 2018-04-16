@@ -11,7 +11,7 @@ lofai creates a simple web listener with several HTTP endpoints for finding info
 
 ### Arguments:  
 `--offset`  
-For streamer operations which start  at the end of a file, how far inward the default seek will start.
+For streamer operations which start  at the end of a file, how far inward the default seek will start.  
 **`Default:`** 2048
 
 `--logfie`  
