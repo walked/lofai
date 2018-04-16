@@ -40,3 +40,14 @@ This endpoint allows you to retrieve the final chunk of a file. This uses an off
 **Example:** `http://127.0.0.1:8000/get/1024`
 
 _Note: Currently returns blank if the offset is greater than the size of the log file._
+
+---
+
+## Docker Image:
+
+Pull Image:  
+`docker pull walked/lofai`
+
+Run Image:  
+`docker run -d -v /host/logs:/container/log -p 8000:8000 walked/lofai --logfile /container/log/log.txt`
+
