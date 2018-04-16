@@ -3,4 +3,4 @@ export GOARCH=386
 
 go build lofai.go
 
-sudo docker build -t walked/lofai .
+docker build -t walked/lofai .
