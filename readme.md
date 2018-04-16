@@ -51,3 +51,8 @@ Pull Image:
 Run Image:  
 `docker run -d -v /host/logs:/container/log -p 8000:8000 walked/lofai --logfile /container/log/log.txt`
 
+---
+
+## Building docker:
+
+Running `build.sh` should handle the build; tagging / pushing to a docker hub should be ok.
