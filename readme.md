@@ -28,16 +28,16 @@ Port to listen on.
 
 `/streamer` -- `[GET]`  
 This endpoint will stream lines as they are appended to the relevant log file; simliar to `tail -f`  
-**Example:** `http://127.0.0.1:8000/streamer`
+**Example:** `curl http://127.0.0.1:8000/streamer`
 
 `/search/<searchTerm>` -- `[GET]`  
 This endpoint will allow you to search for a term. Spaces must be encoded with `%20`  
-**Example:** `http://127.0.0.1:8000/search/test%20search`
+**Example:** `curl http://127.0.0.1:8000/search/test%20search`
 
 
 `/get/<bytes>` -- `[GET]`  
 This endpoint allows you to retrieve the final chunk of a file. This uses an offset provided in the url and by default multiplies by a factor of 64.  
-**Example:** `http://127.0.0.1:8000/get/1024`
+**Example:** `curl http://127.0.0.1:8000/get/1024`
 
 _Note: Currently returns blank if the offset is greater than the size of the log file._
 
