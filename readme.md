@@ -91,7 +91,7 @@ The implementation of this naturally lends itself to a systemd unit to run as a 
 ## Monitoring / Reporting / Alerts:
 The primary two deployment concepts allow for monitoring status readily.  
 
-If via systemd, you can use (insert monitoring tool here) to verify the unit status as running.
+If via systemd, you can use (insert monitoring tool here) to verify the unit status as running. (See: `/examples/lofai.service`)
 
 If via docker; the container is naturally tied to the process at hand. You can use a the `--restart always` flag to ensure operational.
 

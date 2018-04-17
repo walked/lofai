@@ -1,0 +1,11 @@
+[Unit]
+Description=lofai log viewer
+Requires=network-online.target
+After=network-online.target 
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/local/bin/lofai --logfile /var/log/test.log
+
+[Install]
+WantedBy=multi-user.target
